@@ -8,7 +8,7 @@ $(function(){
         var $url = $this.attr('href');
         var $a_pdf_text = $this.text();
         
-        //iframeの前にダウンロードリンクを設置
+        //iframeの前にクラス付きのダウンロードリンクを設置
         $this.addClass('media_btn pdf').attr('target', '_blank');
         
         //iframeを出力
