@@ -4,9 +4,9 @@ $(function(){
  
  //aタグがあるごとに繰り返す
     $a_pdf.each(function () {
-        var $this = $(this);
-        var $url = $this.attr('href');
-        var $a_pdf_text = $this.text();
+        var $this = $(this),
+            $url = $this.attr('href'),
+            $a_pdf_text = $this.text();
         
         //iframeの前にクラス付きのダウンロードリンクを設置
         $this.addClass('media_btn pdf').attr('target', '_blank');
